@@ -19,6 +19,7 @@
     #import "SVProgressHUD+Helper.h"
     // 全局定义
     #import "FKFunctionDefine.h"
+    #import "FKUtilsDefine.h"
     // 响应式框架
     #import "ReactiveObjC/ReactiveObjC.h"
 #endif

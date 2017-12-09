@@ -23,6 +23,8 @@
 		516D80BA1FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80B91FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m */; };
 		516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80BD1FDC3A660040FBC0 /* FKRouterConstant.m */; };
 		516D80C11FDC3B270040FBC0 /* JLRoutes+GenerateURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */; };
+		516D80C91FDC3D910040FBC0 /* ViewController+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80C81FDC3D910040FBC0 /* ViewController+NonBase.m */; };
+		516D80CD1FDC3F860040FBC0 /* FKViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */; };
 		918529935F60DE10AE020BB0 /* libPods-FXXKBaseMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BD5B7514EC70901049BAFC /* libPods-FXXKBaseMVVM.a */; };
 		F8EFE66C6A31E275EC8E7702 /* libPods-FXXKBaseMVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645127BA9596903CE7C8FEE9 /* libPods-FXXKBaseMVVMTests.a */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,12 @@
 		516D80BD1FDC3A660040FBC0 /* FKRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKRouterConstant.m; sourceTree = "<group>"; };
 		516D80BF1FDC3B270040FBC0 /* JLRoutes+GenerateURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes+GenerateURL.h"; sourceTree = "<group>"; };
 		516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+GenerateURL.m"; sourceTree = "<group>"; };
+		516D80C61FDC3D350040FBC0 /* FKViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewControllerProtocol.h; sourceTree = "<group>"; };
+		516D80C71FDC3D910040FBC0 /* ViewController+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+NonBase.h"; sourceTree = "<group>"; };
+		516D80C81FDC3D910040FBC0 /* ViewController+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+NonBase.m"; sourceTree = "<group>"; };
+		516D80CA1FDC3ECE0040FBC0 /* FKUtilsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKUtilsDefine.h; sourceTree = "<group>"; };
+		516D80CB1FDC3F860040FBC0 /* FKViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewControllerIntercepter.h; sourceTree = "<group>"; };
+		516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKViewControllerIntercepter.m; sourceTree = "<group>"; };
 		55140CE03E7E6791E6880BF5 /* Pods-FXXKBaseMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMTests/Pods-FXXKBaseMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		5537A559F0847E4A4D47FFA2 /* Pods-FXXKBaseMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMUITests/Pods-FXXKBaseMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		645127BA9596903CE7C8FEE9 /* libPods-FXXKBaseMVVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXXKBaseMVVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,13 +148,13 @@
 		516D80721FDABED60040FBC0 /* FXXKBaseMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				516D80C21FDC3CC80040FBC0 /* AppDelegate */,
+				516D80C51FDC3CF50040FBC0 /* MVVM */,
 				516D80B11FDC30C60040FBC0 /* Constant */,
-				516D80AD1FDC2F4F0040FBC0 /* Base */,
+				516D80AD1FDC2F4F0040FBC0 /* NonBase */,
 				516D80AC1FDC2F430040FBC0 /* Network */,
 				516D80AB1FDC2F3E0040FBC0 /* Router */,
 				516D80A61FDC2E890040FBC0 /* Utils */,
-				516D80731FDABED60040FBC0 /* AppDelegate.h */,
-				516D80741FDABED60040FBC0 /* AppDelegate.m */,
 				516D80761FDABED60040FBC0 /* ViewController.h */,
 				516D80771FDABED60040FBC0 /* ViewController.m */,
 				516D80791FDABED60040FBC0 /* Main.storyboard */,
@@ -218,11 +226,12 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		516D80AD1FDC2F4F0040FBC0 /* Base */ = {
+		516D80AD1FDC2F4F0040FBC0 /* NonBase */ = {
 			isa = PBXGroup;
 			children = (
+				516D80C41FDC3CEB0040FBC0 /* ViewController */,
 			);
-			path = Base;
+			path = NonBase;
 			sourceTree = "<group>";
 		};
 		516D80B11FDC30C60040FBC0 /* Constant */ = {
@@ -230,8 +239,37 @@
 			children = (
 				516D80B21FDC30FA0040FBC0 /* FKFunctionDefine.h */,
 				516D80B31FDC30FA0040FBC0 /* FKFunctionDefine.m */,
+				516D80CA1FDC3ECE0040FBC0 /* FKUtilsDefine.h */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		516D80C21FDC3CC80040FBC0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				516D80731FDABED60040FBC0 /* AppDelegate.h */,
+				516D80741FDABED60040FBC0 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		516D80C41FDC3CEB0040FBC0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				516D80C61FDC3D350040FBC0 /* FKViewControllerProtocol.h */,
+				516D80C71FDC3D910040FBC0 /* ViewController+NonBase.h */,
+				516D80C81FDC3D910040FBC0 /* ViewController+NonBase.m */,
+				516D80CB1FDC3F860040FBC0 /* FKViewControllerIntercepter.h */,
+				516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		516D80C51FDC3CF50040FBC0 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		9B456366FDDB352098489497 /* Frameworks */ = {
@@ -550,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				516D80781FDABED60040FBC0 /* ViewController.m in Sources */,
+				516D80CD1FDC3F860040FBC0 /* FKViewControllerIntercepter.m in Sources */,
 				516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */,
 				516D80831FDABED70040FBC0 /* main.m in Sources */,
 				516D80751FDABED60040FBC0 /* AppDelegate.m in Sources */,
@@ -559,6 +598,7 @@
 				516D80AA1FDC2EC30040FBC0 /* SVProgressHUD+Helper.m in Sources */,
 				516D80B41FDC30FA0040FBC0 /* FKFunctionDefine.m in Sources */,
 				516D80BA1FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m in Sources */,
+				516D80C91FDC3D910040FBC0 /* ViewController+NonBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
