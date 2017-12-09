@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  FXXKBaseMVVM
+//
+//  Created by 梁宪松 on 2017/12/9.
+//  Copyright © 2017年 madao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+    // 提示组件
+    #import "SVProgressHUD+Helper.h"
+    // 全局定义
+    #import "FKFunctionDefine.h"
+    // 响应式框架
+    #import "ReactiveObjC/ReactiveObjC.h"
+#endif
+
+#endif /* PrefixHeader_pch */

@@ -16,6 +16,13 @@
 		516D80831FDABED70040FBC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80821FDABED60040FBC0 /* main.m */; };
 		516D808D1FDABED90040FBC0 /* FXXKBaseMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D808C1FDABED90040FBC0 /* FXXKBaseMVVMTests.m */; };
 		516D80981FDABED90040FBC0 /* FXXKBaseMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80971FDABED90040FBC0 /* FXXKBaseMVVMUITests.m */; };
+		516D80AA1FDC2EC30040FBC0 /* SVProgressHUD+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80A91FDC2EC30040FBC0 /* SVProgressHUD+Helper.m */; };
+		516D80B01FDC2F770040FBC0 /* FKBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80AF1FDC2F770040FBC0 /* FKBaseRequest.m */; };
+		516D80B41FDC30FA0040FBC0 /* FKFunctionDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80B31FDC30FA0040FBC0 /* FKFunctionDefine.m */; };
+		516D80B71FDC38710040FBC0 /* FKBaseRequest+Rac.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80B61FDC38710040FBC0 /* FKBaseRequest+Rac.m */; };
+		516D80BA1FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80B91FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m */; };
+		516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80BD1FDC3A660040FBC0 /* FKRouterConstant.m */; };
+		516D80C11FDC3B270040FBC0 /* JLRoutes+GenerateURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */; };
 		918529935F60DE10AE020BB0 /* libPods-FXXKBaseMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BD5B7514EC70901049BAFC /* libPods-FXXKBaseMVVM.a */; };
 		F8EFE66C6A31E275EC8E7702 /* libPods-FXXKBaseMVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645127BA9596903CE7C8FEE9 /* libPods-FXXKBaseMVVMTests.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +64,21 @@
 		516D80931FDABED90040FBC0 /* FXXKBaseMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FXXKBaseMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		516D80971FDABED90040FBC0 /* FXXKBaseMVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXXKBaseMVVMUITests.m; sourceTree = "<group>"; };
 		516D80991FDABED90040FBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516D80A51FDC2E3D0040FBC0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		516D80A81FDC2EC30040FBC0 /* SVProgressHUD+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+Helper.h"; sourceTree = "<group>"; };
+		516D80A91FDC2EC30040FBC0 /* SVProgressHUD+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Helper.m"; sourceTree = "<group>"; };
+		516D80AE1FDC2F770040FBC0 /* FKBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBaseRequest.h; sourceTree = "<group>"; };
+		516D80AF1FDC2F770040FBC0 /* FKBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBaseRequest.m; sourceTree = "<group>"; };
+		516D80B21FDC30FA0040FBC0 /* FKFunctionDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKFunctionDefine.h; sourceTree = "<group>"; };
+		516D80B31FDC30FA0040FBC0 /* FKFunctionDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKFunctionDefine.m; sourceTree = "<group>"; };
+		516D80B51FDC38710040FBC0 /* FKBaseRequest+Rac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FKBaseRequest+Rac.h"; sourceTree = "<group>"; };
+		516D80B61FDC38710040FBC0 /* FKBaseRequest+Rac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FKBaseRequest+Rac.m"; sourceTree = "<group>"; };
+		516D80B81FDC38FC0040FBC0 /* FKBaseRequestIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBaseRequestIntercepter.h; sourceTree = "<group>"; };
+		516D80B91FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBaseRequestIntercepter.m; sourceTree = "<group>"; };
+		516D80BC1FDC3A660040FBC0 /* FKRouterConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKRouterConstant.h; sourceTree = "<group>"; };
+		516D80BD1FDC3A660040FBC0 /* FKRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKRouterConstant.m; sourceTree = "<group>"; };
+		516D80BF1FDC3B270040FBC0 /* JLRoutes+GenerateURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes+GenerateURL.h"; sourceTree = "<group>"; };
+		516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+GenerateURL.m"; sourceTree = "<group>"; };
 		55140CE03E7E6791E6880BF5 /* Pods-FXXKBaseMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMTests/Pods-FXXKBaseMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		5537A559F0847E4A4D47FFA2 /* Pods-FXXKBaseMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMUITests/Pods-FXXKBaseMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		645127BA9596903CE7C8FEE9 /* libPods-FXXKBaseMVVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXXKBaseMVVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +140,11 @@
 		516D80721FDABED60040FBC0 /* FXXKBaseMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				516D80B11FDC30C60040FBC0 /* Constant */,
+				516D80AD1FDC2F4F0040FBC0 /* Base */,
+				516D80AC1FDC2F430040FBC0 /* Network */,
+				516D80AB1FDC2F3E0040FBC0 /* Router */,
+				516D80A61FDC2E890040FBC0 /* Utils */,
 				516D80731FDABED60040FBC0 /* AppDelegate.h */,
 				516D80741FDABED60040FBC0 /* AppDelegate.m */,
 				516D80761FDABED60040FBC0 /* ViewController.h */,
@@ -127,6 +154,7 @@
 				516D807E1FDABED60040FBC0 /* LaunchScreen.storyboard */,
 				516D80811FDABED60040FBC0 /* Info.plist */,
 				516D80821FDABED60040FBC0 /* main.m */,
+				516D80A51FDC2E3D0040FBC0 /* PrefixHeader.pch */,
 			);
 			path = FXXKBaseMVVM;
 			sourceTree = "<group>";
@@ -147,6 +175,63 @@
 				516D80991FDABED90040FBC0 /* Info.plist */,
 			);
 			path = FXXKBaseMVVMUITests;
+			sourceTree = "<group>";
+		};
+		516D80A61FDC2E890040FBC0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				516D80A71FDC2E900040FBC0 /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		516D80A71FDC2E900040FBC0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				516D80A81FDC2EC30040FBC0 /* SVProgressHUD+Helper.h */,
+				516D80A91FDC2EC30040FBC0 /* SVProgressHUD+Helper.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		516D80AB1FDC2F3E0040FBC0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				516D80BC1FDC3A660040FBC0 /* FKRouterConstant.h */,
+				516D80BD1FDC3A660040FBC0 /* FKRouterConstant.m */,
+				516D80BF1FDC3B270040FBC0 /* JLRoutes+GenerateURL.h */,
+				516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		516D80AC1FDC2F430040FBC0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				516D80AE1FDC2F770040FBC0 /* FKBaseRequest.h */,
+				516D80AF1FDC2F770040FBC0 /* FKBaseRequest.m */,
+				516D80B51FDC38710040FBC0 /* FKBaseRequest+Rac.h */,
+				516D80B61FDC38710040FBC0 /* FKBaseRequest+Rac.m */,
+				516D80B81FDC38FC0040FBC0 /* FKBaseRequestIntercepter.h */,
+				516D80B91FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		516D80AD1FDC2F4F0040FBC0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		516D80B11FDC30C60040FBC0 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				516D80B21FDC30FA0040FBC0 /* FKFunctionDefine.h */,
+				516D80B31FDC30FA0040FBC0 /* FKFunctionDefine.m */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		9B456366FDDB352098489497 /* Frameworks */ = {
@@ -465,8 +550,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				516D80781FDABED60040FBC0 /* ViewController.m in Sources */,
+				516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */,
 				516D80831FDABED70040FBC0 /* main.m in Sources */,
 				516D80751FDABED60040FBC0 /* AppDelegate.m in Sources */,
+				516D80B01FDC2F770040FBC0 /* FKBaseRequest.m in Sources */,
+				516D80B71FDC38710040FBC0 /* FKBaseRequest+Rac.m in Sources */,
+				516D80C11FDC3B270040FBC0 /* JLRoutes+GenerateURL.m in Sources */,
+				516D80AA1FDC2EC30040FBC0 /* SVProgressHUD+Helper.m in Sources */,
+				516D80B41FDC30FA0040FBC0 /* FKFunctionDefine.m in Sources */,
+				516D80BA1FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +724,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74N2W9VMN2;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FXXKBaseMVVM/PrefixHeader.pch";
 				INFOPLIST_FILE = FXXKBaseMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.madao.FXXKBaseMVVM;
@@ -647,6 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74N2W9VMN2;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FXXKBaseMVVM/PrefixHeader.pch";
 				INFOPLIST_FILE = FXXKBaseMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.madao.FXXKBaseMVVM;
