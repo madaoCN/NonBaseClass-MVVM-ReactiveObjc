@@ -38,7 +38,7 @@
         [UIViewController aspect_hookSelector:@selector(viewDidLoad) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectInfo){
             
             
-            [self viewDidLoad:aspectInfo.instance];
+            [self _viewDidLoad:aspectInfo.instance];
         }  error:nil];
         
         // 拦截 viewWillAppear:
@@ -51,8 +51,7 @@
 }
 
 #pragma mark - Hook Methods
-
-- (void)viewDidLoad:(UIViewController <FKViewControllerProtocol>*)controller
+- (void)_viewDidLoad:(UIViewController <FKViewControllerProtocol>*)controller
 {
     
     if ([controller conformsToProtocol:@protocol(FKViewControllerProtocol)]) {

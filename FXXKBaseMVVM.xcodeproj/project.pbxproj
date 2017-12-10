@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4359A583FDD7FFB6D0EB3E2E /* libPods-FXXKBaseMVVMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C40C8BC08AE62923A1F1AA1 /* libPods-FXXKBaseMVVMUITests.a */; };
+		51582E061FDD524F008068A9 /* UIView+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 51582E051FDD524F008068A9 /* UIView+NonBase.m */; };
+		51582E091FDD5264008068A9 /* FKViewIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 51582E081FDD5264008068A9 /* FKViewIntercepter.m */; };
+		51582E111FDD5476008068A9 /* NSObject+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 51582E101FDD5476008068A9 /* NSObject+NonBase.m */; };
+		51582E141FDD54E3008068A9 /* FKViewModelIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 51582E131FDD54E3008068A9 /* FKViewModelIntercepter.m */; };
+		51671E861FDD63E10084B509 /* FKLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E851FDD63E10084B509 /* FKLoginViewModel.m */; };
+		51671E8A1FDD64970084B509 /* FKLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E891FDD64970084B509 /* FKLoginButton.m */; };
+		51671E8D1FDD65430084B509 /* UIColor+FKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E8C1FDD65430084B509 /* UIColor+FKColor.m */; };
+		51671E901FDD66F50084B509 /* FKLoginInputFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E8F1FDD66F50084B509 /* FKLoginInputFooterView.m */; };
+		51671E931FDD67690084B509 /* UIImage+FKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E921FDD67690084B509 /* UIImage+FKColor.m */; };
+		51671E971FDD683D0084B509 /* FKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E951FDD683D0084B509 /* FKLoginViewController.m */; };
+		51671E981FDD683D0084B509 /* FKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51671E961FDD683D0084B509 /* FKLoginViewController.xib */; };
 		516D80751FDABED60040FBC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80741FDABED60040FBC0 /* AppDelegate.m */; };
-		516D80781FDABED60040FBC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80771FDABED60040FBC0 /* ViewController.m */; };
 		516D807B1FDABED60040FBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516D80791FDABED60040FBC0 /* Main.storyboard */; };
 		516D807D1FDABED60040FBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516D807C1FDABED60040FBC0 /* Assets.xcassets */; };
 		516D80801FDABED60040FBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516D807E1FDABED60040FBC0 /* LaunchScreen.storyboard */; };
@@ -23,7 +33,7 @@
 		516D80BA1FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80B91FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m */; };
 		516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80BD1FDC3A660040FBC0 /* FKRouterConstant.m */; };
 		516D80C11FDC3B270040FBC0 /* JLRoutes+GenerateURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */; };
-		516D80C91FDC3D910040FBC0 /* ViewController+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80C81FDC3D910040FBC0 /* ViewController+NonBase.m */; };
+		516D80C91FDC3D910040FBC0 /* UIViewController+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80C81FDC3D910040FBC0 /* UIViewController+NonBase.m */; };
 		516D80CD1FDC3F860040FBC0 /* FKViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */; };
 		918529935F60DE10AE020BB0 /* libPods-FXXKBaseMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BD5B7514EC70901049BAFC /* libPods-FXXKBaseMVVM.a */; };
 		F8EFE66C6A31E275EC8E7702 /* libPods-FXXKBaseMVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645127BA9596903CE7C8FEE9 /* libPods-FXXKBaseMVVMTests.a */; };
@@ -50,11 +60,32 @@
 		039EC5F0CFBA6D89E01AFA96 /* Pods-FXXKBaseMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVM/Pods-FXXKBaseMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		04BD5B7514EC70901049BAFC /* libPods-FXXKBaseMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXXKBaseMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE2B8FD189A53F7FB878AE3 /* Pods-FXXKBaseMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMTests/Pods-FXXKBaseMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51582E031FDD51C7008068A9 /* FKViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewProtocol.h; sourceTree = "<group>"; };
+		51582E041FDD524F008068A9 /* UIView+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NonBase.h"; sourceTree = "<group>"; };
+		51582E051FDD524F008068A9 /* UIView+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+NonBase.m"; sourceTree = "<group>"; };
+		51582E071FDD5264008068A9 /* FKViewIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewIntercepter.h; sourceTree = "<group>"; };
+		51582E081FDD5264008068A9 /* FKViewIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKViewIntercepter.m; sourceTree = "<group>"; };
+		51582E0E1FDD541A008068A9 /* FKViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewModelProtocol.h; sourceTree = "<group>"; };
+		51582E0F1FDD5476008068A9 /* NSObject+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NonBase.h"; sourceTree = "<group>"; };
+		51582E101FDD5476008068A9 /* NSObject+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NonBase.m"; sourceTree = "<group>"; };
+		51582E121FDD54E3008068A9 /* FKViewModelIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewModelIntercepter.h; sourceTree = "<group>"; };
+		51582E131FDD54E3008068A9 /* FKViewModelIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKViewModelIntercepter.m; sourceTree = "<group>"; };
+		51671E841FDD63E10084B509 /* FKLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginViewModel.h; sourceTree = "<group>"; };
+		51671E851FDD63E10084B509 /* FKLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginViewModel.m; sourceTree = "<group>"; };
+		51671E881FDD64970084B509 /* FKLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginButton.h; sourceTree = "<group>"; };
+		51671E891FDD64970084B509 /* FKLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginButton.m; sourceTree = "<group>"; };
+		51671E8B1FDD65430084B509 /* UIColor+FKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FKColor.h"; sourceTree = "<group>"; };
+		51671E8C1FDD65430084B509 /* UIColor+FKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FKColor.m"; sourceTree = "<group>"; };
+		51671E8E1FDD66F50084B509 /* FKLoginInputFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginInputFooterView.h; sourceTree = "<group>"; };
+		51671E8F1FDD66F50084B509 /* FKLoginInputFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginInputFooterView.m; sourceTree = "<group>"; };
+		51671E911FDD67690084B509 /* UIImage+FKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FKColor.h"; sourceTree = "<group>"; };
+		51671E921FDD67690084B509 /* UIImage+FKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FKColor.m"; sourceTree = "<group>"; };
+		51671E941FDD683D0084B509 /* FKLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginViewController.h; sourceTree = "<group>"; };
+		51671E951FDD683D0084B509 /* FKLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginViewController.m; sourceTree = "<group>"; };
+		51671E961FDD683D0084B509 /* FKLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FKLoginViewController.xib; sourceTree = "<group>"; };
 		516D80701FDABED60040FBC0 /* FXXKBaseMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXXKBaseMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516D80731FDABED60040FBC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		516D80741FDABED60040FBC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		516D80761FDABED60040FBC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		516D80771FDABED60040FBC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		516D807A1FDABED60040FBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		516D807C1FDABED60040FBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		516D807F1FDABED60040FBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,9 +113,9 @@
 		516D80BF1FDC3B270040FBC0 /* JLRoutes+GenerateURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes+GenerateURL.h"; sourceTree = "<group>"; };
 		516D80C01FDC3B270040FBC0 /* JLRoutes+GenerateURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+GenerateURL.m"; sourceTree = "<group>"; };
 		516D80C61FDC3D350040FBC0 /* FKViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewControllerProtocol.h; sourceTree = "<group>"; };
-		516D80C71FDC3D910040FBC0 /* ViewController+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+NonBase.h"; sourceTree = "<group>"; };
-		516D80C81FDC3D910040FBC0 /* ViewController+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+NonBase.m"; sourceTree = "<group>"; };
-		516D80CA1FDC3ECE0040FBC0 /* FKUtilsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKUtilsDefine.h; sourceTree = "<group>"; };
+		516D80C71FDC3D910040FBC0 /* UIViewController+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NonBase.h"; sourceTree = "<group>"; };
+		516D80C81FDC3D910040FBC0 /* UIViewController+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NonBase.m"; sourceTree = "<group>"; };
+		516D80CA1FDC3ECE0040FBC0 /* FKGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKGlobalDefine.h; sourceTree = "<group>"; };
 		516D80CB1FDC3F860040FBC0 /* FKViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewControllerIntercepter.h; sourceTree = "<group>"; };
 		516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKViewControllerIntercepter.m; sourceTree = "<group>"; };
 		55140CE03E7E6791E6880BF5 /* Pods-FXXKBaseMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMTests/Pods-FXXKBaseMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +154,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51582E021FDD51A7008068A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51582E031FDD51C7008068A9 /* FKViewProtocol.h */,
+				51582E041FDD524F008068A9 /* UIView+NonBase.h */,
+				51582E051FDD524F008068A9 /* UIView+NonBase.m */,
+				51582E071FDD5264008068A9 /* FKViewIntercepter.h */,
+				51582E081FDD5264008068A9 /* FKViewIntercepter.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51582E0A1FDD53AC008068A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				51582E0E1FDD541A008068A9 /* FKViewModelProtocol.h */,
+				51582E0F1FDD5476008068A9 /* NSObject+NonBase.h */,
+				51582E101FDD5476008068A9 /* NSObject+NonBase.m */,
+				51582E121FDD54E3008068A9 /* FKViewModelIntercepter.h */,
+				51582E131FDD54E3008068A9 /* FKViewModelIntercepter.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51582E161FDD5619008068A9 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				51582E1A1FDD5687008068A9 /* Model */,
+				51582E191FDD5678008068A9 /* ViewModel */,
+				51582E181FDD566B008068A9 /* Controller */,
+				51582E171FDD565F008068A9 /* View */,
+			);
+			name = MVVM;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		51582E171FDD565F008068A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51671E881FDD64970084B509 /* FKLoginButton.h */,
+				51671E891FDD64970084B509 /* FKLoginButton.m */,
+				51671E8E1FDD66F50084B509 /* FKLoginInputFooterView.h */,
+				51671E8F1FDD66F50084B509 /* FKLoginInputFooterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51582E181FDD566B008068A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51671E941FDD683D0084B509 /* FKLoginViewController.h */,
+				51671E951FDD683D0084B509 /* FKLoginViewController.m */,
+				51671E961FDD683D0084B509 /* FKLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		51582E191FDD5678008068A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				51671E841FDD63E10084B509 /* FKLoginViewModel.h */,
+				51671E851FDD63E10084B509 /* FKLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51582E1A1FDD5687008068A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		516D80671FDABED60040FBC0 = {
 			isa = PBXGroup;
 			children = (
@@ -148,15 +252,14 @@
 		516D80721FDABED60040FBC0 /* FXXKBaseMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				516D80C21FDC3CC80040FBC0 /* AppDelegate */,
-				516D80C51FDC3CF50040FBC0 /* MVVM */,
 				516D80B11FDC30C60040FBC0 /* Constant */,
 				516D80AD1FDC2F4F0040FBC0 /* NonBase */,
 				516D80AC1FDC2F430040FBC0 /* Network */,
 				516D80AB1FDC2F3E0040FBC0 /* Router */,
 				516D80A61FDC2E890040FBC0 /* Utils */,
-				516D80761FDABED60040FBC0 /* ViewController.h */,
-				516D80771FDABED60040FBC0 /* ViewController.m */,
+				51582E161FDD5619008068A9 /* MVVM */,
+				516D80731FDABED60040FBC0 /* AppDelegate.h */,
+				516D80741FDABED60040FBC0 /* AppDelegate.m */,
 				516D80791FDABED60040FBC0 /* Main.storyboard */,
 				516D807C1FDABED60040FBC0 /* Assets.xcassets */,
 				516D807E1FDABED60040FBC0 /* LaunchScreen.storyboard */,
@@ -188,18 +291,14 @@
 		516D80A61FDC2E890040FBC0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				516D80A71FDC2E900040FBC0 /* Category */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		516D80A71FDC2E900040FBC0 /* Category */ = {
-			isa = PBXGroup;
-			children = (
 				516D80A81FDC2EC30040FBC0 /* SVProgressHUD+Helper.h */,
 				516D80A91FDC2EC30040FBC0 /* SVProgressHUD+Helper.m */,
+				51671E8B1FDD65430084B509 /* UIColor+FKColor.h */,
+				51671E8C1FDD65430084B509 /* UIColor+FKColor.m */,
+				51671E911FDD67690084B509 /* UIImage+FKColor.h */,
+				51671E921FDD67690084B509 /* UIImage+FKColor.m */,
 			);
-			path = Category;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		516D80AB1FDC2F3E0040FBC0 /* Router */ = {
@@ -229,6 +328,8 @@
 		516D80AD1FDC2F4F0040FBC0 /* NonBase */ = {
 			isa = PBXGroup;
 			children = (
+				51582E0A1FDD53AC008068A9 /* ViewModel */,
+				51582E021FDD51A7008068A9 /* View */,
 				516D80C41FDC3CEB0040FBC0 /* ViewController */,
 			);
 			path = NonBase;
@@ -239,37 +340,21 @@
 			children = (
 				516D80B21FDC30FA0040FBC0 /* FKFunctionDefine.h */,
 				516D80B31FDC30FA0040FBC0 /* FKFunctionDefine.m */,
-				516D80CA1FDC3ECE0040FBC0 /* FKUtilsDefine.h */,
+				516D80CA1FDC3ECE0040FBC0 /* FKGlobalDefine.h */,
 			);
 			path = Constant;
-			sourceTree = "<group>";
-		};
-		516D80C21FDC3CC80040FBC0 /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				516D80731FDABED60040FBC0 /* AppDelegate.h */,
-				516D80741FDABED60040FBC0 /* AppDelegate.m */,
-			);
-			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		516D80C41FDC3CEB0040FBC0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				516D80C61FDC3D350040FBC0 /* FKViewControllerProtocol.h */,
-				516D80C71FDC3D910040FBC0 /* ViewController+NonBase.h */,
-				516D80C81FDC3D910040FBC0 /* ViewController+NonBase.m */,
+				516D80C71FDC3D910040FBC0 /* UIViewController+NonBase.h */,
+				516D80C81FDC3D910040FBC0 /* UIViewController+NonBase.m */,
 				516D80CB1FDC3F860040FBC0 /* FKViewControllerIntercepter.h */,
 				516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		516D80C51FDC3CF50040FBC0 /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MVVM;
 			sourceTree = "<group>";
 		};
 		9B456366FDDB352098489497 /* Frameworks */ = {
@@ -413,6 +498,7 @@
 				516D80801FDABED60040FBC0 /* LaunchScreen.storyboard in Resources */,
 				516D807D1FDABED60040FBC0 /* Assets.xcassets in Resources */,
 				516D807B1FDABED60040FBC0 /* Main.storyboard in Resources */,
+				51671E981FDD683D0084B509 /* FKLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,18 +673,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516D80781FDABED60040FBC0 /* ViewController.m in Sources */,
+				51671E8A1FDD64970084B509 /* FKLoginButton.m in Sources */,
+				51671E861FDD63E10084B509 /* FKLoginViewModel.m in Sources */,
+				51582E061FDD524F008068A9 /* UIView+NonBase.m in Sources */,
+				51671E901FDD66F50084B509 /* FKLoginInputFooterView.m in Sources */,
+				51671E971FDD683D0084B509 /* FKLoginViewController.m in Sources */,
 				516D80CD1FDC3F860040FBC0 /* FKViewControllerIntercepter.m in Sources */,
 				516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */,
+				51582E111FDD5476008068A9 /* NSObject+NonBase.m in Sources */,
+				51582E141FDD54E3008068A9 /* FKViewModelIntercepter.m in Sources */,
 				516D80831FDABED70040FBC0 /* main.m in Sources */,
+				51671E931FDD67690084B509 /* UIImage+FKColor.m in Sources */,
 				516D80751FDABED60040FBC0 /* AppDelegate.m in Sources */,
 				516D80B01FDC2F770040FBC0 /* FKBaseRequest.m in Sources */,
+				51582E091FDD5264008068A9 /* FKViewIntercepter.m in Sources */,
 				516D80B71FDC38710040FBC0 /* FKBaseRequest+Rac.m in Sources */,
+				51671E8D1FDD65430084B509 /* UIColor+FKColor.m in Sources */,
 				516D80C11FDC3B270040FBC0 /* JLRoutes+GenerateURL.m in Sources */,
 				516D80AA1FDC2EC30040FBC0 /* SVProgressHUD+Helper.m in Sources */,
 				516D80B41FDC30FA0040FBC0 /* FKFunctionDefine.m in Sources */,
 				516D80BA1FDC38FC0040FBC0 /* FKBaseRequestIntercepter.m in Sources */,
-				516D80C91FDC3D910040FBC0 /* ViewController+NonBase.m in Sources */,
+				516D80C91FDC3D910040FBC0 /* UIViewController+NonBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

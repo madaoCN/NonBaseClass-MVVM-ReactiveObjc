@@ -14,9 +14,8 @@
  */
 @protocol FKViewControllerProtocol <NSObject>
 
-@required
-
 #pragma mark - 方法绑定
+@required
 /// 初始化数据
 - (void)fk_initialDefaultsForController;
 

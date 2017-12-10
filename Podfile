@@ -19,6 +19,8 @@ target 'FXXKBaseMVVM' do
   pod 'JLRoutes', '~> 2.0.5'
   # 提示组件框架
   pod 'SVProgressHUD', '~> 2.2.2'
+  # 自动布局
+  pod 'Masonry', '~> 1.0.2'
   
   target 'FXXKBaseMVVMTests' do
     inherit! :search_paths

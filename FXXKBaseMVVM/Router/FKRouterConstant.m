@@ -22,7 +22,6 @@ NSString *const FKUnknownHandlerRouteSchema = @"UnKnown";
 
 #pragma mark - 路由表
 
-NSString *const FKTabbarRoute = @"/com_madao_tabbar/*";
 NSString *const FKNavPushRoute = @"/com_madao_navPush/:viewController";
 NSString *const FKNavPresentRoute = @"/com_madao_navPresent/:viewController";
 NSString *const FKNavStoryBoardPushRoute = @"/com_madao_navStoryboardPush/:viewController";

@@ -8,17 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-// 控制器默认参数名
+// 路由默认控制器参数名
 FOUNDATION_EXTERN NSString *const FKControllerNameRouteParam;
 
-#pragma mark - 路由模式
+#pragma mark - 路由模式 Schema
 /**
  模式 Native：AppSchema://url/:param
  */
 
 // 默认路由
 FOUNDATION_EXTERN NSString *const FKDefaultRouteSchema;
-
 // 网络跳转路由模式
 FOUNDATION_EXTERN NSString *const FKHTTPRouteSchema;
 FOUNDATION_EXTERN NSString *const FKHTTPsRouteSchema;
@@ -31,8 +30,6 @@ FOUNDATION_EXTERN NSString *const FKUnknownHandlerRouteSchema;
 
 
 #pragma mark - 路由表
-// Tabbar路由控制
-FOUNDATION_EXTERN NSString *const FKTabbarRoute;
 
 // 导航栏 Push
 FOUNDATION_EXTERN NSString *const FKNavPushRoute;
