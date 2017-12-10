@@ -19,6 +19,10 @@
 		51671E931FDD67690084B509 /* UIImage+FKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E921FDD67690084B509 /* UIImage+FKColor.m */; };
 		51671E971FDD683D0084B509 /* FKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E951FDD683D0084B509 /* FKLoginViewController.m */; };
 		51671E981FDD683D0084B509 /* FKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51671E961FDD683D0084B509 /* FKLoginViewController.xib */; };
+		51671E9C1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E9A1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.m */; };
+		51671E9D1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51671E9B1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.xib */; };
+		51671EA11FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51671E9F1FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.m */; };
+		51671EA21FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51671EA01FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.xib */; };
 		516D80751FDABED60040FBC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 516D80741FDABED60040FBC0 /* AppDelegate.m */; };
 		516D807B1FDABED60040FBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516D80791FDABED60040FBC0 /* Main.storyboard */; };
 		516D807D1FDABED60040FBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516D807C1FDABED60040FBC0 /* Assets.xcassets */; };
@@ -83,6 +87,12 @@
 		51671E941FDD683D0084B509 /* FKLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginViewController.h; sourceTree = "<group>"; };
 		51671E951FDD683D0084B509 /* FKLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginViewController.m; sourceTree = "<group>"; };
 		51671E961FDD683D0084B509 /* FKLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FKLoginViewController.xib; sourceTree = "<group>"; };
+		51671E991FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginAccountInputTableViewCell.h; sourceTree = "<group>"; };
+		51671E9A1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginAccountInputTableViewCell.m; sourceTree = "<group>"; };
+		51671E9B1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FKLoginAccountInputTableViewCell.xib; sourceTree = "<group>"; };
+		51671E9E1FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLoginPwdInputTableViewCell.h; sourceTree = "<group>"; };
+		51671E9F1FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLoginPwdInputTableViewCell.m; sourceTree = "<group>"; };
+		51671EA01FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FKLoginPwdInputTableViewCell.xib; sourceTree = "<group>"; };
 		516D80701FDABED60040FBC0 /* FXXKBaseMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXXKBaseMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516D80731FDABED60040FBC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		516D80741FDABED60040FBC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,6 +207,12 @@
 				51671E891FDD64970084B509 /* FKLoginButton.m */,
 				51671E8E1FDD66F50084B509 /* FKLoginInputFooterView.h */,
 				51671E8F1FDD66F50084B509 /* FKLoginInputFooterView.m */,
+				51671E991FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.h */,
+				51671E9A1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.m */,
+				51671E9B1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.xib */,
+				51671E9E1FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.h */,
+				51671E9F1FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.m */,
+				51671EA01FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,10 +511,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51671EA21FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.xib in Resources */,
 				516D80801FDABED60040FBC0 /* LaunchScreen.storyboard in Resources */,
 				516D807D1FDABED60040FBC0 /* Assets.xcassets in Resources */,
 				516D807B1FDABED60040FBC0 /* Main.storyboard in Resources */,
 				51671E981FDD683D0084B509 /* FKLoginViewController.xib in Resources */,
+				51671E9D1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +698,7 @@
 				51671E971FDD683D0084B509 /* FKLoginViewController.m in Sources */,
 				516D80CD1FDC3F860040FBC0 /* FKViewControllerIntercepter.m in Sources */,
 				516D80BE1FDC3A660040FBC0 /* FKRouterConstant.m in Sources */,
+				51671E9C1FDD6BA90084B509 /* FKLoginAccountInputTableViewCell.m in Sources */,
 				51582E111FDD5476008068A9 /* NSObject+NonBase.m in Sources */,
 				51582E141FDD54E3008068A9 /* FKViewModelIntercepter.m in Sources */,
 				516D80831FDABED70040FBC0 /* main.m in Sources */,
@@ -689,6 +708,7 @@
 				51582E091FDD5264008068A9 /* FKViewIntercepter.m in Sources */,
 				516D80B71FDC38710040FBC0 /* FKBaseRequest+Rac.m in Sources */,
 				51671E8D1FDD65430084B509 /* UIColor+FKColor.m in Sources */,
+				51671EA11FDD6BBA0084B509 /* FKLoginPwdInputTableViewCell.m in Sources */,
 				516D80C11FDC3B270040FBC0 /* JLRoutes+GenerateURL.m in Sources */,
 				516D80AA1FDC2EC30040FBC0 /* SVProgressHUD+Helper.m in Sources */,
 				516D80B41FDC30FA0040FBC0 /* FKFunctionDefine.m in Sources */,

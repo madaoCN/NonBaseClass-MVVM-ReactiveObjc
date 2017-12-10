@@ -35,6 +35,13 @@ static const void *kViewModelKey = &kViewModelKey;
     return objc_getAssociatedObject(self, kViewModelKey);
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    // 点击隐藏键盘
+    [self fk_hideKeyBoard];
+}
+
 #pragma mark - 通用类
 
 - (CGRect)fk_visibleBoundsShowNav:(BOOL)hasNav showTabBar:(BOOL)hasTabBar
@@ -81,7 +88,7 @@ static const void *kViewModelKey = &kViewModelKey;
     return frame;
 }
 
-- (void)xzw_hideKeyBoard
+- (void)fk_hideKeyBoard
 {
     // 遍历所有子视图
     [self _traverseAllSubviewsToResignFirstResponder:self.view];
@@ -98,31 +105,5 @@ static const void *kViewModelKey = &kViewModelKey;
     }
 }
 
-#pragma mark - Statusbar
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    //设置黑色状态栏
-    return UIStatusBarStyleDefault;
-}
-
-- (BOOL)prefersStatusBarHidden
-{
-    return NO;
-}
-
-
-#pragma mark - 转屏
-- (BOOL)shouldAutorotate {
-    
-    return NO;
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationPortrait;
-}
 
 @end

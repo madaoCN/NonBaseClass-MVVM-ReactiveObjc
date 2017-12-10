@@ -32,4 +32,8 @@
  */
 - (CGRect)fk_visibleBoundsShowNav:(BOOL)hasNav showTabBar:(BOOL)hasTabBar;
 
+/**
+ 隐藏键盘
+ */
+- (void)fk_hideKeyBoard;
 @end
