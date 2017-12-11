@@ -100,7 +100,6 @@ static const void *kViewModelKey = &kViewModelKey;
         if (subView.subviews.count) {
             [self _traverseAllSubviewsToResignFirstResponder:subView];
         }
-        
         [subView resignFirstResponder];
     }
 }

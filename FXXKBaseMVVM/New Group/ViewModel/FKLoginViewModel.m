@@ -7,7 +7,7 @@
 //
 
 #import "FKLoginViewModel.h"
-
+#import "FKLoginRequest.h"
 @implementation FKLoginViewModel
 
 - (instancetype)initWithParams:(NSDictionary *)params
@@ -50,7 +50,10 @@
         _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             @strongify(self);
             
-            return [RACSignal empty];
+            return [[[[[FKLoginRequest alloc] initWithUsr:self.userAccount pwd:self.password] rac_requestSignal] doNext:^(id  _Nullable x) {
+                
+                [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
+            }] materialize];
         }];
     }
     return _loginCommand;

@@ -97,7 +97,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
     RAC(self.tableFooterView.loginBtn, enabled) = RACObserve(self.viewModel, isLoginEnable);
     
     // 点击登录信号
-    [[[self.tableFooterView.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] throttle:2.0f] subscribeNext:^(__kindof UIControl * _Nullable x) {
+    [[[self.tableFooterView.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] throttle:1.0f] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         
         [self.viewModel.loginCommand execute:nil];
@@ -123,6 +123,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
     [self.viewModel.loginCommand.executionSignals subscribeNext:^(RACSignal* signal) {
         
         [[signal dematerialize] subscribeNext:^(id  _Nullable x) {
+            
             BOOL isLogin = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
             if(isLogin){
                 [SVProgressHUD fk_displaySuccessWithStatus:@"登录成功"];
@@ -131,8 +132,10 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
                 [SVProgressHUD dismissWithDelay:2.0f completion:^{
                     [[NSNotificationCenter defaultCenter] postNotificationName:FKLoginStateChangedNotificationKey object:nil];
                 }];
+            }else
+            {
+                [SVProgressHUD fk_displaySuccessWithStatus:@"登录失败"];
             }
-            
         } error:^(NSError * _Nullable error) {
             
             [SVProgressHUD fk_displayErrorWithStatus:error.localizedDescription];

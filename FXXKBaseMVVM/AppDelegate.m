@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 #import <YTKNetwork.h>
 #import "FKLoginViewController.h"
-
+#import "ViewController.h"
 NSString *const FKLoginStateChangedNotificationKey = @"FKLoginStateChangedNotificationKey";
 
 
@@ -102,7 +102,11 @@ NSString *const FKLoginStateChangedNotificationKey = @"FKLoginStateChangedNotifi
     //注册通知
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:FKLoginStateChangedNotificationKey object:nil] subscribeNext:^(NSNotification * _Nullable noti) {
         
-        BOOL isLogin = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
+        NSNumber * number = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
+        BOOL isLogin = NO;
+        if (number) {
+            isLogin = number.boolValue;
+        }
         if (isLogin) {//已登录
 
             [self.window setRootViewController:self.tabbarController];
@@ -125,6 +129,12 @@ NSString *const FKLoginStateChangedNotificationKey = @"FKLoginStateChangedNotifi
         
         _tabbarController = [[UITabBarController alloc] init];
         
+        ViewController *viewController = [[ViewController alloc] init];
+        viewController.title = @"首页";
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        _tabbarController.viewControllers = @[
+                                              navController
+                                              ];
     }
     return _tabbarController;
 }
@@ -182,8 +192,8 @@ NSString *const FKLoginStateChangedNotificationKey = @"FKLoginStateChangedNotifi
     {
         config.debugLogEnabled = NO;
     }
-    config.baseUrl = @"";
-    config.cdnUrl = @"";
+    config.baseUrl = @"http://www.baidu.com";
+    config.cdnUrl = @"http://www.baidu.com";
     
 }
 @end

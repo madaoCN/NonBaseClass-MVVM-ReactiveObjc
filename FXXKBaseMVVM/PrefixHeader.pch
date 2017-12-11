@@ -28,6 +28,9 @@
     #import "FKRouterConstant.h"
     #import "JLRoutes+GenerateURL.h"
 
+    // Request RAC
+    #import "FKBaseRequest+Rac.h"
+
     // FXXK Base Protocol
     #import "FKViewProtocol.h"
     #import "FKViewModelProtocol.h"
