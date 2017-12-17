@@ -56,7 +56,7 @@
             
             FKLoginRequest *loginRequest = [[FKLoginRequest alloc] initWithUsr:self.userAccount pwd:self.password];
             // 数据返回值reformat代理
-            loginRequest.reformDelegate = self;
+            // loginRequest.reformDelegate = self;
             // 数据请求响应代理 通过代理回调
             // loginRequest.delegate = self;
             return [[[loginRequest rac_requestSignal] doNext:^(id  _Nullable x) {

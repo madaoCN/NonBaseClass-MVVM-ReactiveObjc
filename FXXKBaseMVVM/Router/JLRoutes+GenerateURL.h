@@ -8,6 +8,19 @@
 
 #import <JLRoutes/JLRoutes.h>
 
+
+#undef JLRGenRoute
+#define JLRGenRoute(Schema, path) \
+([NSString stringWithFormat: @"%@:/%@", \
+Schema, \
+path])
+
+#undef JLRGenRouteURL
+#define JLRGenRouteURL(Schema, path) \
+([NSURL URLWithString: \
+JLRGenRoute(Schema, path)])
+
+
 @interface JLRoutes (GenerateURL)
 
 /**

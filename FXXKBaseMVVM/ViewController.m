@@ -12,7 +12,17 @@
 
 @interface ViewController ()
 
+/**
+ 退出登录
+ */
 @property (nonatomic, strong) UIButton *logoutBtn;
+
+/**
+ 跳转
+ */
+@property (nonatomic, strong) UIButton *pushBtn;
+
+
 @end
 
 @implementation ViewController
@@ -42,10 +52,8 @@
 - (void)fk_createViewForConctroller
 {
     [self.view addSubview:self.logoutBtn];
+    [self.view addSubview:self.pushBtn];
     
-    [_logoutBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(self.view);
-    }];
 }
 
 -(void)fk_bindViewModelForController
@@ -58,6 +66,32 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:FKLoginStateChangedNotificationKey object:nil];
         }];
     }];
+    
+    // push
+    [[self.pushBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        
+        NSString *router = [JLRoutes fk_generateURLWithPattern:FKNavPushRoute parameters:@[NSStringFromClass(ViewController.class)] extraParameters:nil];
+        [[RACScheduler mainThreadScheduler] schedule:^{
+            
+            [[UIApplication sharedApplication] openURL:JLRGenRouteURL(FKDefaultRouteSchema, router)];
+        }];
+    }];
+}
+
+#pragma mark - Layout
+- (void)updateViewConstraints
+{
+    NSArray *views = @[self.pushBtn, self.logoutBtn];
+    CGFloat offset = SCREEN_HEIGHT/3;
+    
+    [views mas_distributeViewsAlongAxis:MASAxisTypeVertical withFixedItemLength:40 leadSpacing:offset tailSpacing:offset];
+    
+    [views mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.centerX.mas_equalTo(self.view);
+    }];
+    
+    [super updateViewConstraints];
 }
 
 #pragma mark - Getter
@@ -70,6 +104,17 @@
         [_logoutBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
     return _logoutBtn;
+}
+
+- (UIButton *)pushBtn
+{
+    if (!_pushBtn) {
+        _pushBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_pushBtn setTitle:@"下一页" forState:UIControlStateNormal];
+        _pushBtn.titleLabel.font = [UIFont systemFontOfSize:18];
+        [_pushBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+    return _pushBtn;
 }
 
 @end
