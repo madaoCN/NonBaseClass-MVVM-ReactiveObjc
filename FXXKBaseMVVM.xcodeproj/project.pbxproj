@@ -134,6 +134,8 @@
 		516D80CA1FDC3ECE0040FBC0 /* FKGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKGlobalDefine.h; sourceTree = "<group>"; };
 		516D80CB1FDC3F860040FBC0 /* FKViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewControllerIntercepter.h; sourceTree = "<group>"; };
 		516D80CC1FDC3F860040FBC0 /* FKViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKViewControllerIntercepter.m; sourceTree = "<group>"; };
+		51BA4A701FE416B50070F230 /* FKTableViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableViewProtocol.h; sourceTree = "<group>"; };
+		51BA4A711FE4175D0070F230 /* FKTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableViewCellProtocol.h; sourceTree = "<group>"; };
 		55140CE03E7E6791E6880BF5 /* Pods-FXXKBaseMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMTests/Pods-FXXKBaseMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		5537A559F0847E4A4D47FFA2 /* Pods-FXXKBaseMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXXKBaseMVVMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXXKBaseMVVMUITests/Pods-FXXKBaseMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		645127BA9596903CE7C8FEE9 /* libPods-FXXKBaseMVVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXXKBaseMVVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				51582E031FDD51C7008068A9 /* FKViewProtocol.h */,
+				51BA4A701FE416B50070F230 /* FKTableViewProtocol.h */,
+				51BA4A711FE4175D0070F230 /* FKTableViewCellProtocol.h */,
 				51582E041FDD524F008068A9 /* UIView+NonBase.h */,
 				51582E051FDD524F008068A9 /* UIView+NonBase.m */,
 				51582E071FDD5264008068A9 /* FKViewIntercepter.h */,

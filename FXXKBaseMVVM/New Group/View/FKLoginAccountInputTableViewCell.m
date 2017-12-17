@@ -45,8 +45,7 @@
     if ([viewModel isKindOfClass:[FKLoginViewModel class]]){
         
         FKLoginViewModel *_viewModel = (FKLoginViewModel *)viewModel;
-        
-        // 绑定账号
+        // 绑定账号 View -> ViewModel 传递数据 
         @weakify(self);
         RAC(_viewModel, userAccount) = [[self.inputTextFiled.rac_textSignal takeUntil:self.rac_prepareForReuseSignal] map:^id _Nullable(NSString * _Nullable account) {
             

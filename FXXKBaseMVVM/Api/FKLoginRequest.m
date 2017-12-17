@@ -8,6 +8,9 @@
 
 #import "FKLoginRequest.h"
 
+// 登录token key
+NSString *FKLoginAccessTokenKey = @"accessToken";
+
 @implementation FKLoginRequest
 {
     NSString *_usr;
@@ -39,6 +42,12 @@
 {
     return YES;
 }
+
+//// 可以在这里对response 数据进行重新格式化， 也可以使用delegate 设置 reformattor
+//- (id)reformJSONResponse:(id)jsonResponse
+//{
+//
+//}
 
 - (NSString *)requestUrl {
     
