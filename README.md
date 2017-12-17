@@ -1,12 +1,17 @@
 # FxxkBaseClass-MVVM-ReactCocoa
 遵循组合优于继承，采用 AOP方法和基类说Fxxk Off，采用 MVVM架构，ReactCocoa做动态绑定，JLRoutes 进行组件化
 
-概览：主要内容如下：
+### 概览：主要内容如下：
 > 1. 采用AOP思想，使用 __Aspects__  来完成替换 Controller ，View，ViewModel基类，和基类说拜拜
 > 2. View层采用 __MVVM__ 设计模式，使用 __ReactiveObjC__ 进行数据绑定
 > 3. 网络层使用 __YTKNetwork__ 配合 __ReactiveCocoa__  封装网络请求，解决如何交付数据，交付什么样的数据（去Model化)等问题
 > 4. 采用 __JLRoutes__ 路由 对应用进行组件化解耦
 
+
+### 简单实现登录，登录功能
+
+![pic1](https://github.com/madaoCN/FxxkBaseClass-MVVM-ReactiveObjc/blob/master/image_1.jpeg)
+![pic2](https://github.com/madaoCN/FxxkBaseClass-MVVM-ReactiveObjc/blob/master/image_2.jpeg)
 
 ### 后续待完成事项
 - [ ] 本地化持久化层架构
