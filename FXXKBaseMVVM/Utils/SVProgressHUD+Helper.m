@@ -27,6 +27,7 @@ static const NSTimeInterval kMaxShowTime = 5.0f;
 {
     [SVProgressHUD setMinimumDismissTimeInterval:maxShowTime];
     [SVProgressHUD show];
+    [SVProgressHUD dismissWithDelay:maxShowTime];
 }
 
 /// 显示成功状态
