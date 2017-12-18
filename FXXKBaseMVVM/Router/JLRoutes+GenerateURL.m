@@ -108,7 +108,9 @@
     
     [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         
-        NSURLQueryItem *item = [NSURLQueryItem queryItemWithName:key value:obj];
+        NSString *queryKey = [NSString stringWithFormat:@"%@", key];
+        NSString *queryValue = [NSString stringWithFormat:@"%@", obj];
+        NSURLQueryItem *item = [NSURLQueryItem queryItemWithName:queryKey value:queryValue];
         [queryItems addObject:item];
     }];
     components.queryItems = [queryItems copy];
