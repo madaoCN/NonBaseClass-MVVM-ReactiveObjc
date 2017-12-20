@@ -54,6 +54,7 @@
     [self.view addSubview:self.logoutBtn];
     [self.view addSubview:self.pushBtn];
     
+    [self.view setNeedsUpdateConstraints];
 }
 
 -(void)fk_bindViewModelForController
