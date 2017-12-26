@@ -14,6 +14,7 @@
 - (RACSignal *)rac_requestSignal
 {
     [self stop];
+    @weakify(self);
     RACSignal *signal = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         // 请求起飞
         [self startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
@@ -27,14 +28,14 @@
         }];
         
         return [RACDisposable disposableWithBlock:^{
-            
+            @strongify(self);
             [self stop];
         }];
     }] takeUntil:[self rac_willDeallocSignal]];
     
     //设置名称 便于调试
     if (DEBUG) {
-        [signal setNameWithFormat:@"%@ -rac_xzwRequest",  RACDescription(self)];
+        [signal setNameWithFormat:@"%@ -rac_fkRequest",  RACDescription(self)];
     }
     
     return signal;
