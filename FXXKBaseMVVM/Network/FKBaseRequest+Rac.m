@@ -29,7 +29,9 @@
         
         return [RACDisposable disposableWithBlock:^{
             @strongify(self);
-            [self stop];
+            if (!self.isCancelled) {
+                [self stop];
+            }
         }];
     }] takeUntil:[self rac_willDeallocSignal]];
     
