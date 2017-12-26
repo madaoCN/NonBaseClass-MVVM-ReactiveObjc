@@ -1,4 +1,4 @@
-# FxxkBaseClass-MVVM-ReactCocoa
+# NonBaseClass-MVVM-ReactiveObjc
 遵循组合优于继承，采用 AOP方法和基类说Fxxk Off，采用 MVVM架构，ReactCocoa做动态绑定，JLRoutes 进行组件化
 
 ### 概览：主要内容如下：
